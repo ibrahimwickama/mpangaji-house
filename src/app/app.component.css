@@ -1,0 +1,20 @@
+.my-navSection{
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.dp{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.profile-pic{
+  height: 50px;
+  width: 50px;
+  margin-left: 97%;
+}
