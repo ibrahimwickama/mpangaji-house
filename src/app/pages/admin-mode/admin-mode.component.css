@@ -104,6 +104,7 @@
   height: 50px;
   border-radius: 10px;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+
 }
 
 .top-dps{
@@ -122,11 +123,13 @@
   width: 100%;
   height: 100%;
   padding: 10px;
+  overflow-x: hidden;
 }
 
 .right-pane{
   width: 80%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -159,4 +162,13 @@
   border-radius: 50%;
   height: 50px;
   width: 50px;
+}
+
+
+.charts{
+  height: auto;
+  margin-bottom: 30px;
+  /*overflow-x: hidden;*/
+  padding: 5px;
+  overflow: hidden;
 }
