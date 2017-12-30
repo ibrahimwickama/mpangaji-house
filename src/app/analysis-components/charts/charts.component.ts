@@ -43,7 +43,7 @@ export class ChartsComponent implements OnInit, AfterViewInit {
         type: 'column'
       },
       title: {
-        text: 'Malipo ya umeme kwa kila mpangi kwa mwaka'
+        text: 'Malipo ya umeme kila mpangaji kwa mwaka'
       },
       subtitle: {
         text: 'Source: Wickerlabs.com'
