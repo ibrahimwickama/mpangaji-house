@@ -10,6 +10,10 @@
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
   padding-top: 5px;
   padding-bottom: 5px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .dp{
@@ -89,6 +93,7 @@
 
 .center-pane{
   margin-left: 304px;
+  margin-top: 63px;
   padding-left: 5px;
   /*padding-right: 5px;*/
   overflow-x: hidden;
@@ -147,8 +152,13 @@
 
 
 
+                                                            /*-------------------------------------------------------
+                                                               CENTRAL LEFT PANEL CSS
+                                                            ---------------------------------------------------------*/
+
+
 /*-------------------------------------------------------
-   CENTRAL LEFT PANEL CSS
+   ANNOUNCER COMPONENT CSS
 ---------------------------------------------------------*/
 
 .announcer{
@@ -189,8 +199,16 @@
 
 
 
+                                                      /*-------------------------------------------------------
+                                                         CENTRAL RIGHT PANEL CSS
+                                                      ---------------------------------------------------------*/
+.sidespacing{
+  height: auto;
+  margin-bottom: 30px;
+}
+
 /*-------------------------------------------------------
-   CENTRAL RIGHT PANEL CSS
+   To-DO LIST COMPONENT CSS
 ---------------------------------------------------------*/
 
 .todo-header{
@@ -226,8 +244,6 @@
   min-height: 45px;
   margin-bottom: 5px;
   background-color: #e9ebee;
-
-
 }
 
 .todo-task{
@@ -272,4 +288,67 @@
   margin-right: 0px;
 }
 
+
+/*-------------------------------------------------------
+   ADD ADMIN COMPONENT CSS
+---------------------------------------------------------*/
+
+.add-admin-header{
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  display: inline-flex;
+}
+
+.add-admin-tittle{
+  width: 50%;
+  height: 38px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.add-admin-section{
+  padding: 5px;
+}
+
+.admin-to-add{
+  height: auto;
+  min-height: 45px;
+  margin-bottom: 5px;
+  background-color: #fcfcfc;
+}
+
+.admin-to-add:hover{
+  background-color: #e9ebee;
+}
+
+.add-admin-row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.admin-user{
+  padding: 8px;
+  width: 70%;
+}
+
+.admin-add-icon{
+  width: 100%;
+  padding-top: 5px;
+}
+
+.admin-user-prof{
+  /*height: 150px;*/
+  width: auto;
+  margin-left: 1px;
+}
+
+.admin-user-icon{
+  width: 30px;
+  height: 30px;
+}
 
