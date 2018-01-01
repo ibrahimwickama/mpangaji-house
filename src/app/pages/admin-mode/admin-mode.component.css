@@ -123,6 +123,10 @@
 
 }
 
+.tbuttons:hover{
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+
 .top-dps{
   border-radius: 50%;
   height: 40px;
@@ -132,6 +136,7 @@
 
 .top-bt-content{
   padding: 5px;
+  cursor: default;
 
 }
 
@@ -315,6 +320,21 @@
   padding-top: 5px;
 }
 
+.admin-cancel-btn-holder{
+  width: 30px;
+  margin-left: 220px;
+}
+
+.admin-cancel-btn{
+  width: 20px;
+  height: 20px;
+}
+
+.admin-cancel-btn:hover{
+  width: 25px;
+  height: 25px;
+}
+
 .add-admin-section{
   padding: 5px;
 }
@@ -379,6 +399,22 @@
   padding-top: 5px;
 }
 
+.announce-cancel-btn-holder{
+  width: 30px;
+  margin-left: 220px;
+}
+
+.announce-cancel-btn{
+  width: 20px;
+  height: 20px;
+}
+
+.announce-cancel-btn:hover{
+  width: 25px;
+  height: 25px;
+}
+
+
 .announce-section{
   padding: 5px;
 }
@@ -395,3 +431,103 @@
   width: 30px;
   height: 30px;
 }
+
+
+/*-------------------------------------------------------
+   USER PROFILE COMPONENT CSS
+---------------------------------------------------------*/
+
+
+.profile-header{
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  display: inline-flex;
+}
+
+.profile-title{
+  width: 50%;
+  height: 38px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.prof-cancel-btn-holder{
+  width: 30px;
+  margin-left: 220px;
+}
+
+.profile-cancel-btn{
+  width: 20px;
+  height: 20px;
+}
+
+.profile-cancel-btn:hover{
+  width: 25px;
+  height: 25px;
+}
+
+.user-profile{
+  background-color: #e9ebee;
+  height: 200px;
+}
+
+.profile-section{
+  padding: 5px;
+}
+
+.profile-top-buttons-row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.profile-top-buttons{
+  margin-left: 30%;
+}
+
+.profile-tab1{
+  width: 70px;
+  height: 30px;
+  cursor: default;
+  border: 0;
+  border-right: 1px solid rgba(0,0,0,0.2);
+  /*box-shadow: 0 0px 2px 0 rgba(0,0,0,0.2);*/
+}
+
+.profile-tab2{
+  width: 70px;
+  height: 30px;
+  cursor: default;
+  /*margin-left: 5px;*/
+  border: 0;
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.profile-tab3{
+  width: 70px;
+  height: 30px;
+  cursor: default;
+}
+
+.profile-tab-content{
+  padding: 5px;
+  text-align: center;
+  /*margin-top: 1px;*/
+}
+
+.profile-tab1:hover{
+  background-color: #e9ebee;
+}
+
+.profile-tab2:hover{
+  background-color: #e9ebee;
+}
+
+.profile-tab3:hover{
+  background-color: #e9ebee;
+}
+
