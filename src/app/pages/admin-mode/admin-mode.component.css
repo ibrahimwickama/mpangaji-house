@@ -24,8 +24,8 @@
 
 .profile-pic{
   height: 50px;
-  width: 50px;
-  margin-left: 97%;
+  width: auto;
+  margin-left: 1%;
 }
 
 
@@ -91,6 +91,11 @@
    CENTRAL PANEL CSS
 ---------------------------------------------------------*/
 
+.content-spacing{
+  height: auto;
+  margin-bottom: 30px;
+}
+
 .center-pane{
   margin-left: 304px;
   margin-top: 63px;
@@ -100,6 +105,7 @@
   max-height: 100%;
 
 }
+
 
 .top-row{
   padding-bottom: 10px;
@@ -161,38 +167,6 @@
                                                                CENTRAL LEFT PANEL CSS
                                                             ---------------------------------------------------------*/
 
-
-/*-------------------------------------------------------
-   ANNOUNCER COMPONENT CSS
----------------------------------------------------------*/
-
-.announcer{
-  height: auto;
-  margin-bottom: 30px;
-}
-
-.announcer-header{
-  background-color: white;
-  height: 60px;
-  width: 100%;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.announcer-prof{
-  height: 150px;
-  width: auto;
-  margin-left: 10px;
-}
-
-.announcer-dp{
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
-
 .charts{
   height: auto;
   margin-bottom: 30px;
@@ -203,13 +177,5 @@
 }
 
 
-
-                                                      /*-------------------------------------------------------
-                                                         CENTRAL RIGHT PANEL CSS
-                                                      ---------------------------------------------------------*/
-.sidespacing{
-  height: auto;
-  margin-bottom: 30px;
-}
 
 

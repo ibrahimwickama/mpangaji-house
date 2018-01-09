@@ -10,6 +10,7 @@ import { AddAdminComponent } from './ui-components/admin-components/add-admin/ad
 import { DataEntryComponent } from './ui-components/admin-components/data-entry/data-entry.component';
 import { UserProfileComponent } from './ui-components/admin-components/user-profile/user-profile.component';
 import { AnnounceComponent } from './ui-components/admin-components/announce/announce.component';
+import { AnnouncementComponent } from './ui-components/user-components/announcement/announcement.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AnnounceComponent } from './ui-components/admin-components/announce/ann
     AddAdminComponent,
     DataEntryComponent,
     UserProfileComponent,
-    AnnounceComponent
+    AnnounceComponent,
+    AnnouncementComponent
   ],
   imports: [
     BrowserModule
