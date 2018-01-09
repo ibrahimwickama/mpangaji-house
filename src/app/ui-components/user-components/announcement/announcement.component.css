@@ -15,6 +15,7 @@
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
   padding-top: 5px;
   padding-bottom: 5px;
+  display: inline-flex;
 }
 
 .announcer-prof{
@@ -27,6 +28,13 @@
   border-radius: 50%;
   height: 50px;
   width: 50px;
+}
+
+.anouncement-time{
+  padding-top: 25px;
+  margin-left: 70%;
+  width: auto;
+  color: gray;
 }
 
 
