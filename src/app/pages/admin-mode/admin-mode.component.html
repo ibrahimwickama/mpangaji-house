@@ -146,217 +146,43 @@
     <div class=" col-4 right-pane">
 
       <!------TO-DO LIST COMPONENT------->
-
-      <div class="card sidespacing">
-
-        <div class="todo-header">
-          <div class="todo-list-tittle">
-            <b>To-Do List</b>
-          </div>
-
-          <div class=" btn-group add-input">
-            <input type="text" class="form-control" style="height: 99%">
-            <div class="btn btn-primary">Add</div>
-          </div>
-        </div>
-
-        <div class="todo-items">
-          <!--Content Here....!-->
-          <div class="card added-item">
-            <div class="row todo-row">
-              <div class="col-10 todo-task">
-                Task 1
-              </div>
-              <div class="col-2 todo-item-icon">
-                <div class="btn-group">
-                  <span class="icon-spacing"><img class="todo-icon-checked" src="./assets/checked.png" alt=""></span>
-                  <span class="icon-spacing" ><img class="todo-icon-delete" src="./assets/delete.png" alt=""></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card added-item">
-            <div class="row todo-row">
-              <div class="col-10 todo-task">
-                Task 2
-              </div>
-              <div class="col-2 todo-item-icon">
-                <div class="btn-group">
-                  <span class="icon-spacing"><img class="todo-icon-checked" src="./assets/checked.png" alt=""></span>
-                  <span class="icon-spacing" ><img class="todo-icon-delete" src="./assets/delete.png" alt=""></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card added-item">
-            <div class="row todo-row">
-              <div class="col-10 todo-task">
-                Task 3
-              </div>
-              <div class="col-2 todo-item-icon">
-                <div class="btn-group">
-                  <span class="icon-spacing"><img class="todo-icon-checked" src="./assets/checked.png" alt=""></span>
-                  <span class="icon-spacing" ><img class="todo-icon-delete" src="./assets/delete.png" alt=""></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
+      <div class="sidespacing">
+        <app-to-do-list></app-to-do-list>
       </div>
-    </div>
+
+
 
       <!------ADD ADMIN COMPONENT------->
-
-      <div class="card sidespacing">
-        <div class="add-admin-header">
-          <div class="add-admin-tittle">
-            <b>Add Admin</b>
-          </div>
-          <div class="admin-cancel-btn-holder"><img class="admin-cancel-btn" src="./assets/cancel-button.png" alt=""></div>
-        </div>
-
-        <div class="add-admin-section">
-
-          <div class="card admin-to-add">
-            <div class="row add-admin-row">
-              <div class="col-10 admin-user">
-                <div class="admin-user-prof">
-                  <img class="admin-user-icon" src="./assets/user.png" alt="">
-                  <span class="fsz-sm c-grey-900">iBrahim Wickama</span>
-                </div>
-              </div>
-              <div class="col-2 admin-add-icon">
-                <button class="btn btn-success">Add</button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card admin-to-add">
-            <div class="row add-admin-row">
-              <div class="col-10 admin-user">
-                <div class="admin-user-prof">
-                  <img class="admin-user-icon" src="./assets/user.png" alt="">
-                  <span class="fsz-sm c-grey-900">Yusuph Wickama</span>
-                </div>
-              </div>
-              <div class="col-2 admin-add-icon">
-                <button class="btn btn-success">Add</button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card admin-to-add">
-            <div class="row add-admin-row">
-              <div class="col-10 admin-user">
-                <div class="admin-user-prof">
-                  <img class="admin-user-icon" src="./assets/user.png" alt="">
-                  <span class="fsz-sm c-grey-900">Marwa Wickama</span>
-                </div>
-              </div>
-              <div class="col-2 admin-add-icon">
-                <button class="btn btn-success">Add</button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card admin-to-add">
-            <div class="row add-admin-row">
-              <div class="col-10 admin-user">
-                <div class="admin-user-prof">
-                  <img class="admin-user-icon" src="./assets/user.png" alt="">
-                  <span class="fsz-sm c-grey-900">Abuu Kowero</span>
-                </div>
-              </div>
-              <div class="col-2 admin-add-icon">
-                <button class="btn btn-success">Add</button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card admin-to-add">
-            <div class="row add-admin-row">
-              <div class="col-10 admin-user">
-                <div class="admin-user-prof">
-                  <img class="admin-user-icon" src="./assets/user.png" alt="">
-                  <span class="fsz-sm c-grey-900">James Nyambalia</span>
-                </div>
-              </div>
-              <div class="col-2 admin-add-icon">
-                <button class="btn btn-success">Add</button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card admin-to-add">
-            <div class="row add-admin-row">
-              <div class="col-10 admin-user">
-                <div class="admin-user-prof">
-                  <img class="admin-user-icon" src="./assets/user.png" alt="">
-                  <span class="fsz-sm c-grey-900">Mariam </span>
-                </div>
-              </div>
-              <div class="col-2 admin-add-icon">
-                <button class="btn btn-success">Add</button>
-              </div>
-            </div>
-          </div>
-
-        </div>
+      <div class="sidespacing">
+        <app-add-admin></app-add-admin>
       </div>
+
+
 
 
       <!------ADD ANNOUNCE COMPONENT------->
-      <div class="card sidespacing">
-        <div class="announce-header">
-          <div class="announce-tittle">
-            <b>Announce to Followers</b>
-          </div>
-          <div class="announce-cancel-btn-holder"><img class="announce-cancel-btn" src="./assets/cancel-button.png" alt=""></div>
-        </div>
-
-        <div class="announce-section">
-          <input type="text" class="announce-input">
-          <button class="btn btn-outline-primary">
-          <img class="anc-send-icon" src="./assets/announce.png" alt="">
-          </button>
-        </div>
+      <div class="sidespacing">
+        <app-announce></app-announce>
       </div>
+
 
 
 
       <!------USER PROFILE COMPONENT------->
-
-      <div class="card sidespacing">
-        <div class="profile-header">
-          <div class="profile-title">
-            <b>Profile</b>
-          </div>
-          <div class="prof-cancel-btn-holder"><img class="profile-cancel-btn" src="./assets/cancel-button.png" alt=""></div>
-        </div>
-        <div class="user-profile">
-         <div style="text-align: center;margin-top: 90px;font-size: 20px">Profile Coming Soon</div>
-        </div>
-        <div class="profile-section">
-          <div class="row profile-top-buttons-row">
-            <div class="btn-group profile-top-buttons">
-              <div class="profile-tab1"><div class="profile-tab-content">About</div> </div>
-              <div class="profile-tab2"><div class="profile-tab-content">Details</div> </div>
-              <div class="profile-tab3"><div class="profile-tab-content">History</div> </div>
-            </div>
-          </div>
-
-          <div style="text-align: center;height: 100px; background-color: #e9ebee; font-size: 18px">To be Continued...</div>
-
-        </div>
+      <div class="sidespacing">
+        <app-user-profile></app-user-profile>
       </div>
+
+
+
+
+
+      <!------DATA ENTRY COMPONENT------->
+      <div class="sidespacing">
+        <app-data-entry></app-data-entry>
+      </div>
+
+
 
 
 

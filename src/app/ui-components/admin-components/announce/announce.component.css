@@ -1,0 +1,55 @@
+
+/*-------------------------------------------------------
+   ANNOUNCE COMPONENT CSS
+---------------------------------------------------------*/
+
+.announce-header{
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  display: inline-flex;
+}
+
+.announce-tittle{
+  width: 50%;
+  height: 38px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.announce-cancel-btn-holder{
+  width: 30px;
+  margin-left: 220px;
+}
+
+.announce-cancel-btn{
+  width: 20px;
+  height: 20px;
+}
+
+.announce-cancel-btn:hover{
+  width: 25px;
+  height: 25px;
+}
+
+
+.announce-section{
+  padding: 5px;
+}
+
+.announce-input{
+  border: 0;
+  outline: 0;
+  width: 86%;
+  background: transparent;
+  border-bottom: 2px solid #ed5b3a;
+}
+
+.anc-send-icon{
+  width: 30px;
+  height: 30px;
+}
