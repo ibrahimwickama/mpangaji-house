@@ -9,6 +9,9 @@ export class DataEntryComponent implements OnInit {
 
   @Output() showDataEntry = new EventEmitter();
 
+  dataEntryInitOptions:boolean = true;
+  dataEntryInputs:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +19,11 @@ export class DataEntryComponent implements OnInit {
 
   cancelDataEntry(){
     this.showDataEntry.emit(false);
+  }
+
+  continueRound(){
+    this.dataEntryInitOptions = false;
+    this.dataEntryInputs = true;
   }
 
 }
