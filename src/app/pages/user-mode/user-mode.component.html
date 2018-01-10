@@ -1,3 +1,141 @@
-<p>
-  user-mode works!
-</p>
+
+
+<div class="my-navSection">
+
+  <div class="profile-pic">
+    <img class="dp" src="./assets/user.png" alt="">
+    <span >iBrah</span>
+  </div>
+
+
+  <div class="log-out-holder">
+    <img class="log-out-dp" src="./assets/exit.png" alt="" title="LogOut">
+    <!--<span >iBrah</span>-->
+  </div>
+
+
+
+</div>
+
+<div class="sidenav">
+  <!--<div class="same-to-top-nav">-->
+  <!--</div>-->
+
+  <div class="side-nav-option-holder">
+
+    <!--<a href="#"  class="side-nav-item">Profile</a>-->
+    <!--<a href="#"  class="side-nav-item" >Data Entry</a>-->
+    <!--<a href="#"  class="side-nav-item" >Personal history</a>-->
+    <a href="#" id="check-admin">Be Admin</a>
+
+  </div>
+
+
+</div>
+
+
+<div class="center-pane">
+
+  <div class="row top-buttons">
+    <!--<div class="top-buttons">-->
+    <div class="col-2">
+      <div class="card tbuttons">
+        <div class=" top-bt-content">
+          History
+          <span style="margin-left: 68px" >
+               <img class="top-dps" src="./assets/history.png" alt="">
+            </span>
+        </div>
+        <!--History-->
+      </div>
+    </div>
+
+    <div class="col-2">
+      <div class="card tbuttons">
+        <div class=" top-bt-content">
+          Profile
+          <span style="margin-left: 70px" >
+               <img class="top-dps" src="./assets/team.png" alt="">
+            </span>
+        </div>
+        <!--History-->
+      </div>
+    </div>
+
+
+    <div class="col-2">
+      <div class="card tbuttons">
+        <div class=" top-bt-content">
+          News
+          <span style="margin-left: 75px" >
+               <img style="width: 40px; height: 40px" src="./assets/protest.png" alt="">
+            </span>
+        </div>
+        <!--History-->
+      </div>
+    </div>
+
+    <!--<div class="col-2">-->
+      <!--<div class="card tbuttons">-->
+        <!--<div class=" top-bt-content">-->
+          <!--Add Admin-->
+          <!--<span style="margin-left: 40px" >-->
+               <!--<img style="width: 40px; height: 40px" src="./assets/add-admin" alt="">-->
+            <!--</span>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;History&ndash;&gt;-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+  </div>
+
+  <div class="row top-row" >
+
+    <!----------------------------------LEFT PANEL ELEMENTS------------------------------->
+
+    <div class=" col-8 left-pane">
+
+
+      <div class="content-spacing"> <app-announcement></app-announcement> </div>
+      <div class="content-spacing"> <app-announcement></app-announcement> </div>
+      <div class="content-spacing"> <app-announcement></app-announcement> </div>
+      <div class="content-spacing"> <app-announcement></app-announcement> </div>
+      <div class="content-spacing"> <app-announcement></app-announcement> </div>
+      <div class="content-spacing"> <app-announcement></app-announcement> </div>
+      <div class="content-spacing"> <app-announcement></app-announcement> </div>
+      <div class="content-spacing"> <app-announcement></app-announcement> </div>
+
+      <div class="card charts">
+        <app-charts></app-charts>
+      </div>
+
+
+    </div>
+
+
+
+
+    <!----------------------------------RIGHT PANEL ELEMENTS--------------------------------->
+
+    <div class=" col-4 right-pane">
+
+      <!------TO-DO LIST COMPONENT------->
+      <div class="content-spacing">
+        <app-to-do-list></app-to-do-list>
+      </div>
+
+
+      <!------USER PROFILE COMPONENT------->
+      <div class="content-spacing">
+        <app-user-profile></app-user-profile>
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+</div>
