@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserModeComponent implements OnInit {
 
+  showProfile:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  openProfile(){
+    this.showProfile = true;
+  }
+
+  cancelProfile(event){
+    this.showProfile = event;
   }
 
 }

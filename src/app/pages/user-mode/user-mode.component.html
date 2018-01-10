@@ -50,12 +50,12 @@
       </div>
     </div>
 
-    <div class="col-2">
+    <div class="col-2" (click)="openProfile()">
       <div class="card tbuttons">
         <div class=" top-bt-content">
           Profile
           <span style="margin-left: 70px" >
-               <img class="top-dps" src="./assets/team.png" alt="">
+               <img class="top-dps" src="./assets/user.png" alt="">
             </span>
         </div>
         <!--History-->
@@ -127,8 +127,8 @@
 
 
       <!------USER PROFILE COMPONENT------->
-      <div class="content-spacing">
-        <app-user-profile></app-user-profile>
+      <div *ngIf="showProfile" class="content-spacing">
+        <app-user-profile (showProfile)="cancelProfile($event)"></app-user-profile>
       </div>
 
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-data-entry',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataEntryComponent implements OnInit {
 
+  @Output() showDataEntry = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  cancelDataEntry(){
+    this.showDataEntry.emit(false);
   }
 
 }

@@ -22,8 +22,8 @@
 
   <div class="side-nav-option-holder">
 
-      <a href="#"  class="side-nav-item">Profile</a>
-      <a href="#"  class="side-nav-item" >Data Entry</a>
+      <a href="#" (click)="showMyProfile()" class="side-nav-item">Profile</a>
+      <a href="#" (click)="showDataEnntry()" class="side-nav-item" >Data Entry</a>
       <a href="#"  class="side-nav-item" >Personal history</a>
       <a href="#" id="check-admin"  class=" side-nav-item" >Be Admin</a>
 
@@ -62,7 +62,7 @@
     </div>
 
 
-    <div class="col-2">
+    <div class="col-2" (click)="showAnnouncer()">
       <div class="card tbuttons">
         <div class=" top-bt-content">
           Announce
@@ -74,7 +74,7 @@
       </div>
     </div>
 
-    <div class="col-2">
+    <div class="col-2" (click)="showUserToAdmin()">
       <div class="card tbuttons">
         <div class=" top-bt-content">
           Add Admin
@@ -127,24 +127,24 @@
 
 
       <!------ADD ADMIN COMPONENT------->
-      <div class="content-spacing">
-        <app-add-admin></app-add-admin>
+      <div *ngIf="showUsersToAdmin" class="content-spacing">
+        <app-add-admin (showToAddAdmin)="hideUsersToAdmin($event)"></app-add-admin>
       </div>
 
 
 
 
       <!------ADD ANNOUNCE COMPONENT------->
-      <div class="content-spacing">
-        <app-announce></app-announce>
+      <div *ngIf="showAnnounce" class="content-spacing">
+        <app-announce (hideAnnouncer)="hideAnnouncer($event)" ></app-announce>
       </div>
 
 
 
 
-      <!------USER PROFILE COMPONENT------->
-      <div class="content-spacing">
-        <app-user-profile></app-user-profile>
+      <!-------USER PROFILE COMPONENT------->
+      <div *ngIf="showProfile" class="content-spacing">
+        <app-user-profile (showProfile)="hideMyProfile($event)" ></app-user-profile>
       </div>
 
 
@@ -152,8 +152,8 @@
 
 
       <!------DATA ENTRY COMPONENT------->
-      <div class="content-spacing">
-        <app-data-entry></app-data-entry>
+      <div *ngIf="showDataEnrty" class="content-spacing">
+        <app-data-entry (showDataEntry)="hideDataEntry($event)"></app-data-entry>
       </div>
 
 
