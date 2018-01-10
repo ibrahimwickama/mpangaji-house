@@ -41,8 +41,8 @@
   z-index: 1; /* Stay on top */
   top: 0;
   display: block;
-  /*left: 0;*/
-  background: #276696; /* Black*/
+  /*box-shadow: 0 0px 0px 2px rgba(0,0,0,0.2);*/
+  background: #f9fafb; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   /*padding-top: 60px; !* Place content 60px from the top *!*/
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -53,11 +53,30 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #f5f5f5;
+  color: black;
   display: block;
   transition: 0.3s;
+  margin-left: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
   /*position: relative;*/
 }
+
+#check-admin{
+  margin-top: 550px;
+  background-color: #71af45;
+  color: white;
+  margin-right: 95px;
+}
+
+#check-admin:hover{
+  background-color: rgba(118,214,45,0.91);
+  color: white;
+}
+
+
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
@@ -85,6 +104,20 @@
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
 }
+
+
+.side-nav-option-holder{
+  background-color: #f9fafb;
+  height: auto;
+  margin-top: 160px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.side-nav-item{
+  padding-left: 3px;
+}
+
 
 
 /*-------------------------------------------------------
