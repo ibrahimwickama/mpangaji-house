@@ -26,4 +26,6 @@ export class DataEntryComponent implements OnInit {
     this.dataEntryInputs = true;
   }
 
+
+
 }
