@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-admin-mode',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-mode.component.css']
 })
 export class AdminModeComponent implements OnInit {
+
+  @Output() logOut = new EventEmitter();
 
   showUsersToAdmin:boolean = false;
   showAnnounce:boolean = false;
@@ -49,6 +51,10 @@ export class AdminModeComponent implements OnInit {
 
   hideDataEntry(event){
     this.showDataEnrty = event;
+  }
+
+  logOutClick(){
+    this.logOut.emit(true);
   }
 
 

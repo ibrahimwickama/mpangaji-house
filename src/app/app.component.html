@@ -1,10 +1,16 @@
 
+<div *ngIf="!adminLogOutStatus">
+  <app-admin-mode (logOut)="adminLogOutClick($event)"></app-admin-mode>
+</div>
 
-<app-admin-mode></app-admin-mode>
+<div *ngIf="!userLogOutStatus">
+  <app-user-mode (logOut)="userLogOutClick($event)"></app-user-mode>
+</div>
 
-<!--<app-user-mode></app-user-mode>-->
+<div *ngIf="notLogedIn">
+  <app-login (didLogin)="doLogin($event)"></app-login>
+</div>
 
-<!--<app-login></app-login>-->
 
 <!--<app-signup></app-signup>-->
 

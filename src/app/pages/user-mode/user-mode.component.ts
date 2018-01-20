@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-user-mode',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-mode.component.css']
 })
 export class UserModeComponent implements OnInit {
+
+  @Output() logOut = new EventEmitter();
 
   showProfile:boolean = false;
 
@@ -20,6 +22,10 @@ export class UserModeComponent implements OnInit {
 
   cancelProfile(event){
     this.showProfile = event;
+  }
+
+  logOutClick(){
+    this.logOut.emit(true);
   }
 
 }
