@@ -83,8 +83,22 @@
   /*position: relative;*/
 }
 
+
+#enroll{
+  margin-top: 500px;
+  background-color: #71af45;
+  color: white;
+  margin-right: 95px;
+}
+
+#enroll:hover{
+  background-color: rgba(118,214,45,0.91);
+  color: white;
+}
+
+
 #check-admin{
-  margin-top: 550px;
+  margin-top: 5px;
   background-color: #71af45;
   color: white;
   margin-right: 95px;

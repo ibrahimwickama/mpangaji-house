@@ -11,6 +11,9 @@ import { DataEntryComponent } from './ui-components/admin-components/data-entry/
 import { UserProfileComponent } from './ui-components/admin-components/user-profile/user-profile.component';
 import { AnnounceComponent } from './ui-components/admin-components/announce/announce.component';
 import { AnnouncementComponent } from './ui-components/user-components/announcement/announcement.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { ApartmntListingComponent } from './pages/apartmnt-listing/apartmnt-listing.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { AnnouncementComponent } from './ui-components/user-components/announcem
     DataEntryComponent,
     UserProfileComponent,
     AnnounceComponent,
-    AnnouncementComponent
+    AnnouncementComponent,
+    LoginComponent,
+    SignupComponent,
+    ApartmntListingComponent
   ],
   imports: [
     BrowserModule
