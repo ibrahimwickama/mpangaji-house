@@ -8,6 +8,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class LoginComponent implements OnInit {
 
   @Output() didLogin = new EventEmitter();
+  @Output() doSignUp = new EventEmitter();
 
   didLog:boolean = false;
 
@@ -20,5 +21,11 @@ export class LoginComponent implements OnInit {
   loginClick(){
     this.didLogin.emit(true);
   }
+
+  signUpClick(){
+    this.doSignUp.emit(true);
+  }
+
+
 
 }

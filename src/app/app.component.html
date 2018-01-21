@@ -8,10 +8,13 @@
 </div>
 
 <div *ngIf="notLogedIn">
-  <app-login (didLogin)="doLogin($event)"></app-login>
+  <app-login (didLogin)="doLoginClick($event)"
+              (doSignUp)="doSignUpClick($event)"></app-login>
 </div>
 
+<div *ngIf="userSignUp">
+  <app-signup (completeSignUp)="doneSignUp($event)" ></app-signup>
+</div>
 
-<!--<app-signup></app-signup>-->
 
 

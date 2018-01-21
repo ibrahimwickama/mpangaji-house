@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {HpptProviderService} from "../../services/hppt-provider.service";
+import {Observable} from "rxjs/Observable";
 
 @Component({
   selector: 'app-signup',
@@ -7,13 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  @Output() completeSignUp = new EventEmitter();
+
+  fname:any;
+  lname:any;
+  username:any;
+  phone:any;
+  email:any;
+  password:any;
+  re_password:any;
+
+
+  constructor(public httpProvider: HpptProviderService) { }
 
   ngOnInit() {
   }
 
-  loginClick(){
-    console.log("Login Click");
+  singUpClick(){
+    console.log("worekd ");
+    // this.httpProvider.uploadUserInfo(this.fname,this.lname,this.username,this.phone,this.email,this.password).subscribe(response =>{
+    //   console.log("worekd "+response);
+    //   this.completeSignUp.emit(true);
+    // });
   }
 
 }

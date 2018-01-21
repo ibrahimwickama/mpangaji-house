@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class AppComponent implements OnInit {
   adminLogOutStatus: boolean = true;
   userLogOutStatus: boolean = true;
+  userSignUp: boolean = false;
   notLogedIn: boolean = true;
 
   constructor() { }
@@ -15,7 +16,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
   }
 
-  doLogin(event){
+  doLoginClick(event){
     this.userLogOutStatus = false;
     this.notLogedIn = false;
   }
@@ -28,6 +29,19 @@ export class AppComponent implements OnInit {
   userLogOutClick(event){
     this.userLogOutStatus = true;
     this.notLogedIn = true;
+  }
+
+  doSignUpClick(event){
+    this.userSignUp = true;
+    this.adminLogOutStatus = true;
+    this.userLogOutStatus = true;
+    this.notLogedIn = false;
+  }
+
+  doneSignUp(event){
+    this.userSignUp = false;
+    this.userLogOutStatus = false;
+    this.notLogedIn = false;
   }
 
 }

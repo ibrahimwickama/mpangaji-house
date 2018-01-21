@@ -14,6 +14,9 @@ import { AnnouncementComponent } from './ui-components/user-components/announcem
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ApartmntListingComponent } from './pages/apartmnt-listing/apartmnt-listing.component';
+import {FormsModule} from "@angular/forms";
+import {HpptProviderService} from "./services/hppt-provider.service";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -32,9 +35,9 @@ import { ApartmntListingComponent } from './pages/apartmnt-listing/apartmnt-list
     ApartmntListingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,HttpModule
   ],
-  providers: [],
+  providers: [HpptProviderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

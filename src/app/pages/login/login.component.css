@@ -118,6 +118,33 @@ form button {
 form button:hover {
   background-color: #f5f7f9;
 }
+
+
+.signUp-button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  /*margin-left: 175px;*/
+  margin: 0 auto;
+  display: block;
+}
+
+.signUp-button:hover {
+  background-color: #f5f7f9;
+}
+
+
 .bg-bubbles {
   position: absolute;
   top: 0;
