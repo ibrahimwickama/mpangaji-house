@@ -3,13 +3,22 @@
 header("Content-Type: Application/json");
 
 	require "db_connect.php";
+
+	$data = json_decode(file_get_contents("php://input"));
+	$fname =  $data->fname;
+	$lname =  $data->lname;
+	$username =  $data->username;
+	$password =  $data->password;
+	$email =  $data->email;
+	$phone =  $data->phone;
 	
-	$fname = $_POST["fname"];
-	$lname = $_POST["lname"];
-	$username = $_POST["username"];
-	$phone = $_POST["phone"];
-	$email = $_POST["email"];
-	$password = $_POST["password"];
+	// $fname = $_POST["fname"];
+	// $lname = $_POST["lname"];
+	// $username = $_POST["username"];
+	// $phone = $_POST["phone"];
+	// $email = $_POST["email"];
+	// $password = $_POST["password"];
+
         $sucessful = true;
 	
 	$status = $_POST["status"];
@@ -22,21 +31,23 @@ header("Content-Type: Application/json");
 	if(mysqli_query($con, $sql)){
 		
 		if(mysqli_query($con, $loginfo)){
-			$sucessful = true;
-			 echo json_encode($sucessful, JSON_PRETTY_PRINT);
+			 $sucessful = true;
+			echo json_encode($sucessful, JSON_PRETTY_PRINT);
+			 //Header("Location: ../../../");
 		}else{
 			$sucessful = false;
-			echo "error 1 in insertion..." .mysqli_error($con);
+			echo json_encode($sucessful, JSON_PRETTY_PRINT);
+			//echo "error 1 in insertion..." .mysqli_error($con);
 		}
 
 		
-		//Header("Location: ../SmsClone/inbox.php");
+		
 	}else{
 		//$sucessful = false;
 		//echo "error 2 in insertion..." .mysqli_error($con);
 	}
 
-	echo json_encode($sucessful, JSON_PRETTY_PRINT);
+	//echo json_encode($sucessful, JSON_PRETTY_PRINT);
 
 
 ?>

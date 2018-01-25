@@ -35,7 +35,7 @@ import {HttpModule} from "@angular/http";
     ApartmntListingComponent
   ],
   imports: [
-    BrowserModule,HttpModule
+    BrowserModule,HttpModule, FormsModule
   ],
   providers: [HpptProviderService],
   bootstrap: [AppComponent]

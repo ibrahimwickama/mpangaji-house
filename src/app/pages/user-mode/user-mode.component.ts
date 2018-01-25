@@ -1,4 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {HpptProviderService} from "../../services/hppt-provider.service";
 
 @Component({
   selector: 'app-user-mode',
@@ -10,10 +11,12 @@ export class UserModeComponent implements OnInit {
   @Output() logOut = new EventEmitter();
 
   showProfile:boolean = false;
+  userInfo:any;
 
-  constructor() { }
+  constructor(private httpProvider: HpptProviderService) { }
 
   ngOnInit() {
+    this.userInfo = this.httpProvider.loginInfo;
   }
 
   openProfile(){

@@ -5,12 +5,12 @@ header("Content-Type: Application/json");
 	require "db_connect.php";
 
 	$data = json_decode(file_get_contents("php://input"));
-	$fname = mysql_real_escape_string($data->fname);
-	$lname = mysql_real_escape_string($data->lname);
-	$username = mysql_real_escape_string($data->username);
-	$password = mysql_real_escape_string($data->password);
-	$email = mysql_real_escape_string($data->email);
-	$phone = mysql_real_escape_string($data->phone);
+	$fname =  $data->fname;
+	$lname =  $data->lname;
+	$username =  $data->username;
+	$password =  $data->password;
+	$email =  $data->email;
+	$phone =  $data->phone;
 
 
 	// $fname = $_POST["fname"];

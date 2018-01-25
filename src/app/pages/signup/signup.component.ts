@@ -26,11 +26,10 @@ export class SignupComponent implements OnInit {
   }
 
   singUpClick(){
-    console.log("worekd ");
-    // this.httpProvider.uploadUserInfo(this.fname,this.lname,this.username,this.phone,this.email,this.password).subscribe(response =>{
-    //   console.log("worekd "+response);
-    //   this.completeSignUp.emit(true);
-    // });
+    this.httpProvider.uploadSignUpInfo(this.fname,this.lname,this.username,this.phone,this.email,this.password).subscribe(response =>{
+      console.log("worekd "+response);
+      this.completeSignUp.emit(true);
+    });
   }
 
 }

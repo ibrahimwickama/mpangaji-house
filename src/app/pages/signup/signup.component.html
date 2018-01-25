@@ -2,32 +2,34 @@
   <div class="container">
     <h1>Sign Up</h1>
 
+
     <!--<form class="form" name="form1" method="post" action="../../../api/signup.php">-->
-    <!--&lt;!&ndash;<form class="form" name="form1">&ndash;&gt;-->
-      <!--<input type="text" placeholder="First name" name="fname"  [(ngModel)]="fname">-->
-      <!--<input type="text" placeholder="surname" name="lname"  [(ngModel)]="lname">-->
-      <!--<input type="number" placeholder="Phone" name="phone"  [(ngModel)]="phone">-->
-      <!--<input type="email" placeholder="Email" name="email"  [(ngModel)]="email">-->
-      <!--<input type="text" placeholder="username" name="username"  [(ngModel)]="username">-->
-      <!--<input type="password" placeholder="Password" name="password"  [(ngModel)]="password">-->
-      <!--<input type="password" placeholder="Repeat Password"  [(ngModel)]="re_password">-->
-      <!--<button type="submit"   id="singUp-button">Sign Up</button>-->
-      <!--&lt;!&ndash;<button type="submit" (click)="singUpClick()"  id="singUp-button">Sign Up</button>&ndash;&gt;-->
-    <!--</form>-->
-
-
-    <form class="form" name="form1" method="post" action="../../../api/signup.php">
-      <!--<form class="form" name="form1">-->
-      <input type="text" placeholder="First name" name="fname" >
-      <input type="text" placeholder="surname" name="lname"  >
-      <input type="number" placeholder="Phone" name="phone"  >
-      <input type="email" placeholder="Email" name="email"  >
-      <input type="text" placeholder="username" name="username"  >
-      <input type="password" placeholder="Password" name="password"  >
-      <input type="password" placeholder="Repeat Password" >
-      <!--<button type="submit"   id="singUp-button">Sign Up</button>-->
-      <button type="submit"  id="singUp-button">Sign Up</button>
+    <form class="form" name="form1">
+    <input type="text" placeholder="First name" name="fname"  [(ngModel)]="fname">
+    <input type="text" placeholder="surname" name="lname"  [(ngModel)]="lname">
+    <input type="number" placeholder="Phone" name="phone"  [(ngModel)]="phone">
+    <input type="email" placeholder="Email" name="email"  [(ngModel)]="email">
+    <input type="text" placeholder="username" name="username"  [(ngModel)]="username">
+    <input type="password" placeholder="Password" name="password"  [(ngModel)]="password">
+    <input type="password" placeholder="Repeat Password"  [(ngModel)]="re_password">
+    <!--<button type="submit"   id="singUp-button">Sign Up</button>-->
+    <button type="button" (click)="singUpClick()"  id="singUp-button">Sign Up</button>
     </form>
+
+
+
+    <!--<form class="form" name="form1" method="post" action="../../../api/signup.php">-->
+      <!--&lt;!&ndash;<form class="form" name="form1">&ndash;&gt;-->
+      <!--<input type="text" placeholder="First name" name="fname" >-->
+      <!--<input type="text" placeholder="surname" name="lname"  >-->
+      <!--<input type="number" placeholder="Phone" name="phone"  >-->
+      <!--<input type="email" placeholder="Email" name="email"  >-->
+      <!--<input type="text" placeholder="username" name="username"  >-->
+      <!--<input type="password" placeholder="Password" name="password"  >-->
+      <!--<input type="password" placeholder="Repeat Password" >-->
+      <!--&lt;!&ndash;<button type="submit"   id="singUp-button">Sign Up</button>&ndash;&gt;-->
+      <!--<button type="submit"  id="singUp-button">Sign Up</button>-->
+    <!--</form>-->
 
 
   </div>

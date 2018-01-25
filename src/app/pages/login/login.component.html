@@ -2,9 +2,10 @@
   <div class="container">
     <h1>Welcome</h1>
 
-    <form class="form" >
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
+    <form class="form" name="formLogin" >
+      <input type="text" placeholder="Username" name="username" [(ngModel)]="username" >
+      <!--<input type="text" placeholder="Username" [(ngModel)]="username" (input)="listenUsername($event)">-->
+      <input type="password" placeholder="Password" name="password" [(ngModel)]="password">
       <button type="submit" (click)="loginClick()" id="login-button">Login</button>
 
         <div style="margin-top: 70px">
