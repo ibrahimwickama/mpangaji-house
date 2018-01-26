@@ -17,6 +17,7 @@ import { ApartmntListingComponent } from './pages/apartmnt-listing/apartmnt-list
 import {FormsModule} from "@angular/forms";
 import {HpptProviderService} from "./services/hppt-provider.service";
 import {HttpModule} from "@angular/http";
+import { AddApartmentComponent } from './ui-components/user-components/add-apartment/add-apartment.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {HttpModule} from "@angular/http";
     AnnouncementComponent,
     LoginComponent,
     SignupComponent,
-    ApartmntListingComponent
+    ApartmntListingComponent,
+    AddApartmentComponent
   ],
   imports: [
     BrowserModule,HttpModule, FormsModule

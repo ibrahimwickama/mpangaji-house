@@ -8,16 +8,18 @@ import {Observable} from 'rxjs';
 export class HpptProviderService {
 
   loginInfo:any;
+  loginState:any;
 
   constructor(private http: Http) { }
 
-  uploadSignUpInfo(fname,lname,username,phone,email,password){
+  uploadSignUpInfo(fname,lname,username,phone,email,password, mkoa, wilaya,mtaa,apt_name){
     let url = "../../../api/signup.php";
-    // let reqstHeadDon = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-    // let options = new RequestOptions({ headers: reqstHeadDon });
-    return this.http.post(url,{'fname': fname, 'lname': lname, 'username': username, 'phone': phone, 'email': email, 'password': password})
+    return this.http.post(url,
+      {'fname': fname, 'lname': lname, 'username': username,
+        'phone': phone, 'email': email, 'password': password,
+        'mkoa':mkoa, 'wilaya':wilaya, 'mtaa':mtaa, 'apt_name':apt_name})
       .map((response: Response) =>{
-        console.log("hello the response  :"+response.text());
+        console.log("Sign Up status: "+response.text());
         JSON.parse(response.text());
       }).catch( this.handleError );
   }
@@ -28,6 +30,7 @@ export class HpptProviderService {
     return this.http.post(url,{'username':username, 'password':password})
       .map((response: Response) =>{
       // console.log("my login infos : "+username);
+      this.loginState = response.text();
       this.loginInfo = JSON.parse(response.text());
   }).catch( this.handleError );
 

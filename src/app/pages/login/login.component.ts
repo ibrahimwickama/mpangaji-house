@@ -39,7 +39,14 @@ export class LoginComponent implements OnInit {
   loginClick(){
     this.httpProvider.loginAction(this.username, this.password).subscribe(response=>{
       console.log("my Login Info are.: "+JSON.stringify(this.httpProvider.loginInfo));
-      this.didLogin.emit(true);
+      let loginResponse = this.httpProvider.loginInfo;
+      if(loginResponse[0].status === "failed"){
+        console.log("OOps");
+      }else {
+        this.didLogin.emit(true);
+      }
+
+
     });
 
 

@@ -4,7 +4,7 @@
 
 
     <!--<form class="form" name="form1" method="post" action="../../../api/signup.php">-->
-    <form class="form" name="form1">
+    <form class="form" name="userInformation" *ngIf="!userInfoFull">
     <input type="text" placeholder="First name" name="fname"  [(ngModel)]="fname">
     <input type="text" placeholder="surname" name="lname"  [(ngModel)]="lname">
     <input type="number" placeholder="Phone" name="phone"  [(ngModel)]="phone">
@@ -13,9 +13,29 @@
     <input type="password" placeholder="Password" name="password"  [(ngModel)]="password">
     <input type="password" placeholder="Repeat Password"  [(ngModel)]="re_password">
     <!--<button type="submit"   id="singUp-button">Sign Up</button>-->
-    <button type="button" (click)="singUpClick()"  id="singUp-button">Sign Up</button>
+    <button type="button" (click)="continueSingUpClick()" >Next</button>
     </form>
 
+
+
+    <form class="form" name="apartment-detail" *ngIf="!aptDetailFull">
+      <h3 >Apartment</h3>
+      <input list="users" type="text" placeholder="Region" name="Region"  [(ngModel)]="mkoa">
+      <input type="text" placeholder="Council" name="Council"  [(ngModel)]="wilaya">
+      <input type="text" placeholder="Street"  name="Street"  [(ngModel)]="mtaa">
+      <input type="text" placeholder="Apartment" name="Apartment"  [(ngModel)]="apt_name">
+
+      <button type="button" (click)="singUpClick()" >Sign Up</button>
+    </form>
+
+    <datalist id="users">
+      <option value="Ibrahim Wickama">
+      <option value="Yusuph Wickama">
+      <option value="Marwa Wickama">
+      <option value="Abuu Kowero">
+      <option value="James Nyambalia">
+      <option value="Mariam">
+    </datalist>
 
 
     <!--<form class="form" name="form1" method="post" action="../../../api/signup.php">-->

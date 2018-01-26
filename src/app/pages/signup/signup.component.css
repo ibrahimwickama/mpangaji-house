@@ -67,6 +67,15 @@ body :-ms-input-placeholder {
   font-weight: 300;
   color: white;
 }
+
+.container h3 {
+  font-size: 40px;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  font-weight: 300;
+  color: white;
+}
+
 form {
   padding: 20px 0;
   position: relative;
